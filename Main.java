@@ -1,22 +1,17 @@
 import java.util.Scanner;
-public class Main 
+ 
+public class Main
 {
-    public static void main(String[] args) 
-    {
-        int n;
-        Scanner s = new Scanner(System.in);
-        n = s.nextInt();
-        if(n > 0)
-        {
-            System.out.println("  Positive");
-        }
-        else if(n < 0)
-        {
-            System.out.println(" Negative");
-        }
-        else
-        {
-            System.out.println("zero ");
-        }
-    }
+   public static void main(String args[])
+   {
+      int x;
+      
+      Scanner in = new Scanner(System.in);
+      x = in.nextInt();
+     
+      if (x % 2 == 0)
+         System.out.println("The number is even.");
+      else
+         System.out.println("The number is odd.");
+   }
 }
