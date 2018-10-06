@@ -8,11 +8,11 @@ public class Main
         n = s.nextInt();
         if(n > 0)
         {
-            System.out.println(n+"  Positive");
+            System.out.println("  Positive");
         }
         else if(n < 0)
         {
-            System.out.println(n+" Negative");
+            System.out.println(" Negative");
         }
         else
         {
