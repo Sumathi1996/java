@@ -1,23 +1,23 @@
 import java.util.Scanner;
  class TestIsomorphic {
      public static void main(String[] args) {
-           String str1;
-           String str2;
+           String a;
+           String b;
            String str;
 String[] input = new String[2]; 
 Scanner scan = new Scanner(System.in);
 input= scan.nextLine().split(" ");
-str1= input[0];
-str2= input[1];
+a= input[0];
+b= input[1];
 
-           String res = TestIsomorphic.checkIsomorphic(str1,str2);
+           String res = TestIsomorphic.checkIsomorphic(a,b);
            System.out.println(res);
      }
 
-     static String checkIsomorphic(String str1, String str2) {
-           int length = str1.length();
+     static String checkIsomorphic(String a, String b) {
+           int length = a.length();
            /* length of both strings must be same */
-           if (length != str2.length()) {
+           if (length != b.length()) {
                  return "no";
            }
 
@@ -27,8 +27,8 @@ str2= input[1];
                  visited[i] = '#';
            }
 
-           char[] strArr1 = str1.toCharArray();
-           char[] strArr2 = str2.toCharArray();
+           char[] strArr1 = a.toCharArray();
+           char[] strArr2 = b.toCharArray();
 
            // Process all characters one by on
            for (int i = 0; i<length; i++) {
